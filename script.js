@@ -23,7 +23,7 @@ colorSwatches.forEach((swatch) => {
     let color = this.getAttribute("data-color");
 
     // 🔄 Update umbrella image
-    umbrellaImage.src = `./images/${color} umbrella.png`;
+    umbrellaImage.src = `./images/${color}_umbrella.png`;
 
     // 🎨 Change button color dynamically
     uploadContainer.style.backgroundColor = colorMap[color] || "#008cdd";
