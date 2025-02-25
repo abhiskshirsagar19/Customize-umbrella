@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Customizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Umbrella Section -->
+        <div class="umbrella-section">
+            <img id="umbrella-image" src="./images/Blue umbrella.png" alt="Umbrella">
+            <img id="umbrella-loader" src="./images/loader_icon.svg" class="umbrella-loader"></img>
+            <!-- Loader for umbrella -->
+            <img id="logo-preview" src="" alt="Logo Preview">
+        </div>
+
+        <!-- Customization Panel -->
+        <div class="customization-panel">
+            <h1>Custom Umbrella</h1>
+            <p>Choose Color:</p>
+            <div class="color-options">
+                <div class="color-swatch" data-color="pink" style="background-color: pink;"></div>
+                <div class="color-swatch" data-color="blue" style="background-color: blue;"></div>
+                <div class="color-swatch" data-color="yellow" style="background-color: yellow;"></div>
+            </div>
+
+            <p>Customize your umbrella</p>
+            <small>Upload a logo for an instant preview.</small>
+
+            <label class="upload-btn">
+                <input type="file" id="logo-upload" accept="image/*" hidden>
+                <div class="upload-container">
+                    <img src="./images/upload_icon.svg" alt="Upload" class="upload-icon">
+                    <span class="file-name">UPLOAD LOGO</span>
+                    <img src="./images/loader_icon.svg" alt="Loader" class="loader-icon"> <!-- Loader in button -->
+                    <span class="remove-file">✖</span>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

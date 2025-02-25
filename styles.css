@@ -1,0 +1,164 @@
+/* 🌍 General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 📦 Main Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌂 Umbrella Section */
+.umbrella-section {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.umbrella-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 🌀 Loader inside Umbrella */
+.umbrella-loader {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: none;
+    animation: spin 1s linear infinite;
+}
+
+/* 🖼️ Uploaded Logo Preview */
+#logo-preview {
+    position: absolute;
+    bottom: 10%;
+    width: 80px;
+    display: none;
+}
+
+/* 🎨 Customization Panel */
+.customization-panel {
+    width: 45%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+small {
+    color: gray;
+}
+
+/* 🎨 Color Swatches */
+.color-options {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.color-swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.2s ease;
+}
+
+.color-swatch:hover {
+    transform: scale(1.1);
+    border: 2px solid black;
+}
+
+
+.upload-btn {
+    display: inline-block;
+    width: 100%;
+    max-width: 320px;
+
+}
+
+.upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Space between elements */
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #008cdd;
+    /* Default blue color */
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+
+.upload-icon {
+    position: absolute;
+    margin-right: 250px;
+    width: 18px;
+    height: 18px;
+}
+
+
+.loader-icon {
+    width: 18px;
+    height: 18px;
+    display: none;
+    position: absolute;
+    right: 15px;
+    animation: spin 1s linear infinite;
+}
+
+.remove-file {
+    display: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
